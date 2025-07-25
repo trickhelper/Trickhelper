@@ -1,85 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TrickHelper | Color Prediction Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrickHelper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
-    /* Background Animation */
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
-      overflow: hidden;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-    }
+      overflow: hidden;
+    }h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-out;
+}
 
-    .stars {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: url('https://i.imgur.com/U1p8iIi.png') repeat;
-      animation: moveStars 200s linear infinite;
-      z-index: -1;
-      opacity: 0.3;
-    }
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
 
-    @keyframes moveStars {
-      from {background-position: 0 0;}
-      to {background-position: 10000px 5000px;}
-    }
+.btn {
+  background-color: #ff0057;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+}
 
-    .container {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 20px;
-    }
+.btn:hover {
+  background-color: #ff3366;
+}
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #00ffcc;
-      text-shadow: 0 0 10px #00ffcc;
-    }
+.socials {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  animation: fadeInUp 1.5s ease-out;
+}
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      color: #ccc;
-    }
+.socials a img {
+  width: 40px;
+  transition: transform 0.3s;
+}
 
-    .button {
-      display: inline-block;
-      padding: 15px 35px;
-      margin: 15px 10px;
-      background: linear-gradient(45deg, #00f0ff, #ff4b2b);
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1rem;
-      border-radius: 50px;
-      box-shadow: 0 0 15px #00f0ff;
-      transition: 0.3s ease;
-    }
+.socials a img:hover {
+  transform: scale(1.2);
+}
 
-    .button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #ff416c;
-    }
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
   </style>
 </head>
 <body>
-  <div class="stars"></div>
-
-  <div class="container">
-    <h1>🎯 TrickHelper</h1>
-    <p>Get 100% working color prediction & DueWin tricks. Join now!</p>
-
-    <a class="button" href="http://t.me/TrickHelper3" target="_blank">📲 Join Telegram</a>
-    <a class="button" href="https://www.facebook.com/share/19AMbDezk2/" target="_blank">🔵 Facebook Page</a>
+  <h1>🎮 Welcome to TrickHelper 🎮</h1>
+  <p>Join our Telegram for the latest color prediction tips, tricks & daily signals!</p>
+  <a href="https://t.me/+Tx427Lek2ho5Mjhl" class="btn">Join Telegram Now 🚀</a>  <div class="socials">
+    <a href="https://www.facebook.com/share/19AMbDezk2/"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
   </div>
 </body>
 </html>
